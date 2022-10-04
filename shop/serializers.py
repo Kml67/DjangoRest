@@ -23,7 +23,7 @@ class ArticleSerializer(serializers.ModelSerializer):
 class ProductListSerializer(serializers.ModelSerializer):
     class Meta:
         model = Product
-        fields = ['id', 'name']
+        fields = ['id', 'name', 'ecoscore']
 
 class ProductDetailSerializer(serializers.ModelSerializer):
     articles = serializers.SerializerMethodField()
